@@ -20,9 +20,9 @@ app.get('/login.html', function (req, res) {
    res.sendFile( __dirname + "/" + "login.html" );  
 })  
  
-/* route to handle login and registration */
-app.post('/api/register',registerController.register);
-app.post('/api/authenticate',authenticateController.authenticate);
+ //route to handle login and registration
+//app.post('/api/register',registerController.register);
+//app.post('/api/authenticate',authenticateController.authenticate);
  
 console.log(authenticateController);
 app.post('/controllers/register-controller', registerController.register);
